@@ -30,7 +30,8 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		var evntDt = new Date("July 18, 2015 20:00:00");
-		$('.countdown-timer').addCountDown(evntDt);
+		var offset = -330;/* Timezone offset of India +5:30 = 330 minutes*/
+		$('.countdown-timer').addCountDown(evntDt,offset);
 	});
 	</script>
 </body>
