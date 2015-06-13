@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown js</title>
+<style>
+.countdown-timer span {
+    color: red;
+    font-size: x-large;
+}
+</style>
+</head>
+<body>
+	
+	<div class="countdown-timer">
+		<span data-name="days0"></span>
+		<span data-name="days1"></span>
+		<span>:</span>
+		<span data-name="hours0"></span>
+		<span data-name="hours1"></span>
+		<span>:</span>
+		<span data-name="minutes0"></span>
+		<span data-name="minutes1"></span>
+		<span>:</span>
+		<span data-name="seconds0"></span>
+		<span data-name="seconds1"></span>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "countdown.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var evntDt = new Date("July 18, 2015 20:00:00");
+		$('.countdown-timer').addCountDown(evntDt);
+	});
+	</script>
+</body>
+</html>
