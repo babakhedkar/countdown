@@ -10,15 +10,15 @@ Ans:
   a.Add countdown.js file to your webpage after jquery script.
   b.your html structure should be like 
     <div class="countdown-timer">
-  		<span data-name="days0"></span>
-  		<span data-name="days1"></span>
-  		<span data-name="hours0"></span>
-  		<span data-name="hours1"></span>
-  		<span data-name="minutes0"></span>
-  		<span data-name="minutes1"></span>
-  		<span data-name="seconds0"></span>
-  		<span data-name="seconds1"></span>
-	  </div>
+  	<span data-name="days0">1</span>
+  	<span data-name="days1">2</span>
+  	<span data-name="hours0">3</span>
+  	<span data-name="hours1"></span>
+  	<span data-name="minutes0"></span>
+  	<span data-name="minutes1"></span>
+  	<span data-name="seconds0"></span>
+  	<span data-name="seconds1"></span>
+  </div>
 	  
 you can use any html elements only required thing is the number of elements should be 
 8(2 for days,2 for hours,2 for minutes and 2 for seconds). and the attribute 'data-name' should be same as shown in above example.
