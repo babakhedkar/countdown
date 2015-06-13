@@ -10,8 +10,7 @@
 </style>
 </head>
 <body>
-	
-	<div class="countdown-timer">
+	<div class="london-uk-countdown">
 		<span data-name="days0"></span>
 		<span data-name="days1"></span>
 		<span>:</span>
@@ -24,14 +23,30 @@
 		<span data-name="seconds0"></span>
 		<span data-name="seconds1"></span>
 	</div>
-	
+	<div class="india-countdown-timer">
+		<span data-name="days0"></span>
+		<span data-name="days1"></span>
+		<span>:</span>
+		<span data-name="hours0"></span>
+		<span data-name="hours1"></span>
+		<span>:</span>
+		<span data-name="minutes0"></span>
+		<span data-name="minutes1"></span>
+		<span>:</span>
+		<span data-name="seconds0"></span>
+		<span data-name="seconds1"></span>
+	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src = "countdown.js"></script>
+	<script src = "countdown.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		var evntDt = new Date("July 18, 2015 20:00:00");
-		var offset = -330;/* Timezone offset of India +5:30 = 330 minutes*/
-		$('.countdown-timer').addCountDown(evntDt,offset);
+		var uk_offset = -60;/*GMT +1 = -60 in minutes*/
+		$('.london-uk-countdown').addCountDown(evntDt,uk_offset);
+		
+		$('.india-countdown-timer').addCountDown(evntDt);
+		/* 2nd parameter is not included as plugin takes IST offset i.e. +5:30 = -330 by default*/
+		
 	});
 	</script>
 </body>
