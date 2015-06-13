@@ -8,18 +8,8 @@ some advantages of this plugin are:
 How To Use?
 Ans: 
   a.Add countdown.js file to your webpage after jquery script.
-  b.your html structure should be like 
-    <div class="countdown-timer">
-  	<span data-name="days0">1</span>
-  	<span data-name="days1">2</span>
-  	<span data-name="hours0">3</span>
-  	<span data-name="hours1"></span>
-  	<span data-name="minutes0"></span>
-  	<span data-name="minutes1"></span>
-  	<span data-name="seconds0"></span>
-  	<span data-name="seconds1"></span>
-  </div>
-	  
+  b.your html structure should be as per the index.html file
+
 you can use any html elements only required thing is the number of elements should be 
 8(2 for days,2 for hours,2 for minutes and 2 for seconds). and the attribute 'data-name' should be same as shown in above example.
 
